@@ -22,7 +22,7 @@ const userSchema = mongoose.Schema({
     maxlength: [20, 'Last name must have less or equal than 20 characters'],
     trim: true,
   },
-  image: { type: String, default: 'default.jpg' },
+  image: { type: String, default: null },
   email: {
     type: String,
     required: [true, 'Please provide a valid email'],
